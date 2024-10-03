@@ -25,7 +25,7 @@ export default function Navbar({ aboutRef,  contactRef, featureProjectRef , expi
                     <a href="#" className="-m-1.5 p-1.5">
                         <span className="sr-only">AV Logo</span>
                         <img 
-                            src="logoAV.png" 
+                            src="https://i.ibb.co/bWKcwK7/logoAV.png" 
                             className="w-20 h-30" 
                             alt="Logo"
                         />
