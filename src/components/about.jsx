@@ -7,20 +7,6 @@ const AboutMe = () => {
         triggerOnce: true,
         threshold: 0.1,
     });
-    const handleScroll = (event) => {
-        event.preventDefault(); // Prevent the default anchor behavior
-        const target = document.querySelector('#about');
-        
-        if (target) {
-            const yOffset = -50; // The offset of 50px
-            const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
-    
-            window.scrollTo({
-                top: y,
-                behavior: 'smooth', // This ensures smooth scrolling
-            });
-        }
-    };
     
 
     return (
@@ -77,7 +63,7 @@ const AboutMe = () => {
                                 <div className="relative">
                                     <div className="absolute inset-0 bg-[#032388] opacity-20 rounded transform translate-x-2 translate-y-2"></div>
                                     <img
-                                        src="./Shamas.png"
+                                        src="https://i.ibb.co/DLSR955/Shamas.png"
                                         alt="Abhinav Vinod"
                                         className="rounded relative z-10 w-full  h-[1000x]"
                                     />
