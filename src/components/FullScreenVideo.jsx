@@ -16,7 +16,7 @@ const FullScreenVideo = ({ onEnd }) => {
   return (
     <div className="fullscreen-video">
       <video id="intro-video" className="video" muted autoPlay>
-        <source src="https://streamable.com/vo9s5u" type="video/mp4" />
+        <source src="https://numan.b-cdn.net/WhatsApp%20Video%202024-10-04%20at%2012.51.22%20AM.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </div>
