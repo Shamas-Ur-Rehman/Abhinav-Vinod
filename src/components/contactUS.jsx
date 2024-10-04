@@ -13,7 +13,7 @@ const ContactComponent = () => {
       <Navbar contactRef={contactRef} />
       <div ref={contactRef} className="bg-white text-black min-h-screen flex flex-col justify-center items-center p-4">
         <div className="text-center max-w-2xl">
-          <h2 className="text-black text-xl mb-2"><span className='font-bold text-[#032388]'>.04 </span> What's Next?</h2>
+          <h2 className="text-black text-xl mb-2"><span className='font-bold text-[#032388]'>04.</span> What's Next?</h2>
           <h1 className="text-5xl font-bold mb-4">Get In Touch</h1>
           <p className="text-gray-400 mb-8">
             Whether you have a question or just want to say hi, I'll try my best to get back to you!
