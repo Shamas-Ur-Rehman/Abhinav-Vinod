@@ -15,7 +15,22 @@ export default function Navbar({ aboutRef,  contactRef, featureProjectRef , expi
     const scrollToSection = (ref) => {
         ref.current?.scrollIntoView({ behavior: 'smooth' });
     };
-    
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+    const handleMenuClick = (sectionId) => {
+        const target = document.querySelector(sectionId);
+
+        if (target) {
+            const yOffset = -50; // Adjust this if you have a fixed header
+            const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+            window.scrollTo({ top: y, behavior: 'smooth' });
+        }
+
+        // Close the sidebar after clicking the menu
+        setIsSidebarOpen(false);
+    };
+
 
     return (
         <header className="fixed top-0 left-0 right-0 bg-[#FFFFFF] z-50">
@@ -45,7 +60,6 @@ export default function Navbar({ aboutRef,  contactRef, featureProjectRef , expi
                                 className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-black"
                             >
                                 <a href='#expirance' className="relative scroll-smooth">
-
                             <span className='text-[#032388] font-sans font-semibold'>02.</span> Experience
                             </a>
                             </PopoverButton>
@@ -106,10 +120,10 @@ export default function Navbar({ aboutRef,  contactRef, featureProjectRef , expi
                     <div className="mt-6 flow-root">
                         <div className="-my-6 divide-y divide-gray-500/10">
                             <div className="space-y-2 py-6">
-                                <a href="#" onClick={() => scrollToSection(aboutRef)} className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-[#a2adcb] hover:bg-gray-50">About</a>
-                                <a href="#" onClick={() => scrollToSection(expiranceRef)} className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-[#a2adcb] hover:bg-gray-50">Experience</a>
-                                <a href="#" onClick={() => scrollToSection(featureProjectRef)} className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-[#a2adcb] hover:bg-gray-50">Work</a>
-                                <a href="#" onClick={() => scrollToSection(contactRef)} className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-[#a2adcb] hover:bg-gray-50">Contact</a>
+                                <a href="#about" onClick={() => scrollToSection(aboutRef)} className="-mx-3 block relative scroll-smooth rounded-lg px-3 py-2 text-base font-semibold leading-7 text-[#a2adcb] hover:bg-gray-50">About</a>
+                                <a href='#expirance'onClick={() => scrollToSection(expiranceRef)} className="-mx-3 block relative scroll-smooth rounded-lg px-3 py-2 text-base font-semibold leading-7 text-[#a2adcb] hover:bg-gray-50">Experience</a>
+                                <a href='#work' onClick={() => scrollToSection(featureProjectRef)} className="-mx-3 block relative scroll-smooth rounded-lg px-3 py-2 text-base font-semibold leading-7 text-[#a2adcb] hover:bg-gray-50">Work</a>
+                                <a href="#" onClick={() => scrollToSection(contactRef)} className="-mx-3 block relative scroll-smooth rounded-lg px-3 py-2 text-base font-semibold leading-7 text-[#a2adcb] hover:bg-gray-50">Contact</a>
                             </div>
                             <div className="py-6">
                                 <a href="#" className="block rounded-lg ml-6 mr-12 text-center text-base font-semibold leading-6 text-[#032388] border-2 border-[#032388] p-2">
