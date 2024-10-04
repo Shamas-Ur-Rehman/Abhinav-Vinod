@@ -42,7 +42,7 @@ const HeroSection = () => {
             <span className="text-[#032388] cursor-pointer">Lone Star High School.</span></a>
           </p>
           <a href="https://docs.google.com/document/d/1pCKKVGNbeLMoDhFPVCzl4S6Vl0J3FLSt79wDQvqw3S0/edit">
-          <button className="mt-8 px-6 py-3 border border-[#032388] text-[#032388] rounded hover:bg-[#032388] hover:text-[#FFFF] transition duration-300">
+          <button className="mt-8 px-6 py-3 border-2 border-[#032388] text-[#032388] rounded hover:bg-[#032388] hover:text-[#FFFF] transition duration-300">
           check out my resume!
           </button></a>
         </div>

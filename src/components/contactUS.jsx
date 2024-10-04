@@ -20,7 +20,7 @@ const ContactComponent = () => {
           </p>
           <button 
             onClick={handleSayHello}
-            className="border border-[#032388] text-[#032388] px-6 py-3 rounded hover:bg-[#032388] hover:text-white transition duration-300"
+            className="border-2 border-[#032388] text-[#032388] px-6 py-3 rounded hover:bg-[#032388] hover:text-white transition duration-300"
 
 
           >

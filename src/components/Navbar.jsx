@@ -74,7 +74,7 @@ export default function Navbar({ aboutRef,  contactRef, featureProjectRef , expi
 
                 {/* Resume Button */}
                 <div className="hidden lg:flex lg:justify-end">
-                    <a href="https://docs.google.com/document/d/1pCKKVGNbeLMoDhFPVCzl4S6Vl0J3FLSt79wDQvqw3S0/edit" className="border border-[#032388] text-[#032388] px-6 py-3 rounded hover:bg-[#032388] hover:text-[#FFFF] transition duration-300">
+                    <a href="https://docs.google.com/document/d/1pCKKVGNbeLMoDhFPVCzl4S6Vl0J3FLSt79wDQvqw3S0/edit" className="border-2 border-[#032388] text-[#032388] px-6 py-3 rounded hover:bg-[#032388] hover:text-[#FFFF] transition duration-300">
                         Resume
                     </a>
                 </div>
@@ -91,7 +91,7 @@ export default function Navbar({ aboutRef,  contactRef, featureProjectRef , expi
             {/* Mobile Menu Dialog */}
             <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
                 <div className="fixed inset-0 z-10" />
-                <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-[#0a192f] px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                     <div className="flex items-center justify-between">
                         <a href="#" className="-m-1.5 p-1.5">
                             <span className="sr-only">Your Company</span>
@@ -112,7 +112,7 @@ export default function Navbar({ aboutRef,  contactRef, featureProjectRef , expi
                                 <a href="#" onClick={() => scrollToSection(contactRef)} className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-[#a2adcb] hover:bg-gray-50">Contact</a>
                             </div>
                             <div className="py-6">
-                                <a href="#" className="block rounded-lg ml-6 mr-12 text-center text-base font-semibold leading-6 text-[#61f9d5] border-2 border-[#61f9d5] p-2">
+                                <a href="#" className="block rounded-lg ml-6 mr-12 text-center text-base font-semibold leading-6 text-[#032388] border-2 border-[#032388] p-2">
                                     Resume
                                 </a>
                             </div>
